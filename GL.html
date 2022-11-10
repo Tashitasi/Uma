@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本的な表の作成</title>
+</head>
+<body>
+ウェブサンプルtitle
+
+<div id="boxArea" style="display:table;padding:0 0 0 2px;"><div style="width:74px;height:22px;float:left;">
+<a href="https://twitter.com/share" class="twitter-share-button"{count} data-lang="ja" data-hashtags="ウマ娘"data-dnt="true">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div>
+
+
+
+<select id="list">
+  <option value="trID1">1行目</option>
+  <option value="trID2">2行目</option>
+  <option value="trID3">3行目</option>
+  <option value="trID4">4行目</option>
+  <option value="trID5">5行目</option>
+  <option value="trID6" hidden>6行目</option>
+  <option value="trID7" hidden>7行目</option>
+  <option value="trID8" hidden>8行目</option>
+  <option value="trID9" hidden>9行目</option>
+  <option value="trID10" hidden>10行目</option>
+  <option value="trID11" hidden>11行目</option>
+  <option value="trID12" hidden>12行目</option>
+  <option value="trID13" hidden>13行目</option>
+  <option value="trID14" hidden>14行目</option>
+  <option value="trID15" hidden>15行目</option>
+  <option value="trID16" hidden>16行目</option>
+  <option value="trID17" hidden>17行目</option>
+  <option value="trID18" hidden>18行目</option>
+  <option value="trID19" hidden>19行目</option>
+  <option value="trID20" hidden>20行目</option>
+  <option value="trID21" hidden>21行目</option>
+  <option value="trID22" hidden>22行目</option>
+  <option value="trID23" hidden>23行目</option>
+</select>
+<input onclick="hideRow()" type="button" value="表示 / 非表示">
+<input onclick="hideRow2()" type="button" value="～まで表示">
+<br>
+<input onclick="ResetCk()" type="button" value="チェック全外し">
+<br />
+
+<div id="body">
+<div class="ie5">
+<table class="style_table" id="table_need" cellspacing="1" border="1">
+<tbody>
+<tr>
+<th class="style_th" style="background-color:#55C7FA; color:white; text-align:center;">Da</th>
+<th class="style_th" style="background-color:#FF596E; color:white; text-align:center;">Pa</th>
+<th class="style_th" style="background-color:#FF83B8; color:white; text-align:center;">Vo</th>
+<th class="style_th" style="background-color:#FFB239; color:white; text-align:center;">Vi</th>
+<th class="style_th" style="background-color:#AA7AFA; color:white; text-align:center;">Me</th>
+</tr>
+<tr>
+<td class="style_td_n" style="text-align:center;">0</td>
+<td class="style_td_n" style="text-align:center;">0</td>
+<td class="style_td_n" style="text-align:center;">0</td>
+<td class="style_td_n" style="text-align:center;">0</td>
+<td class="style_td_n" style="text-align:center;">0</td>
+</tbody>
+</table>
+</div>
+</div>
+
+<br />
+
+<div id="body">
+<div class="ie5">
+<table class="style_table" id="table_1" cellspacing="1" border="1">
+<tbody>
+<tr><th class="style_th" style="text-align:center;">習得可能時期</th><th class="style_th" style="text-align:center;">曲名</th>
+<th class="style_th" style="text-align:center;">ボーナス</th>
+<th class="style_th" style="background-color:#55C7FA; color:white; text-align:center;">Da</th>
+<th class="style_th" style="background-color:#FF596E; color:white; text-align:center;">Pa</th>
+<th class="style_th" style="background-color:#FF83B8; color:white; text-align:center;">Vo</th>
+<th class="style_th" style="background-color:#FFB239; color:white; text-align:center;">Vi</th>
+<th class="style_th" style="background-color:#AA7AFA; color:white; text-align:center;">Me</th>
+<th style=background-color:#000000;"></tr>
+
+<tr>
+<td class="style_td0" style="text-align:center;">デビュー前 あと8ターン<br class="spacer" />(自動習得)</td>
+<td class="style_td_0" style="text-align:center;">Make debut!</td>
+<td class="style_td_0" style="text-align:center;">すべてのパフォーマンス+10<br class="spacer" />得意率アップ +5</td>
+<td class="style_td_0" style="text-align:center;">0</td>
+<td class="style_td_0" style="text-align:center;">0</td>
+<td class="style_td_0" style="text-align:center;">0</td>
+<td class="style_td_0" style="text-align:center;">0</td>
+<td class="style_td_0" style="text-align:center;">0</td><td></td>
+
+</tr>
+<div class="sticky-ads">
+<tr>
+<td class="style_td0" rowspan="8" style="text-align:center;">デビュー前 あと8～</td>
+<td class="style_td" style="text-align:center;" value="1">立ち位置ゼロ番！順位は一番！</td>
+<td class="style_td" style="text-align:center;" value="2">トレーニングのスピード上昇量 +1<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;" value="3">21</td>
+<td class="style_td" style="text-align:center;" value="4">0</td>
+<td class="style_td" style="text-align:center;" value="5">0</td>
+<td class="style_td" style="text-align:center;" value="6">21</td>
+<td class="style_td" style="text-align:center;" value="7">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_1" onclick="getSong()"></td>
+</tr>
+
+<tr><td onclick="clickDisplayAlert()" class="style_td" style="text-align:center;">Ring Ring ダイアリー</td><td class="style_td" style="text-align:center;">トレーニングのスタミナ上昇量 +1<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_2" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">Go This Way</td><td class="style_td" style="text-align:center;">トレーニングのパワー上昇量 +1<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_3" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">逃げ切りっ！Fallin'Love</td><td class="style_td" style="text-align:center;">トレーニングの根性上昇量 +1<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_4" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">奇跡を信じて！</td><td class="style_td" style="text-align:center;">トレーニングの賢さ上昇量 +1<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_5" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">RUN×RUN！</td><td class="style_td" style="text-align:center;">スキルPt +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">14</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">16</td><td class="style_td" style="text-align:center;">14</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_6" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">全速！前進！ウマドルパワー☆</td><td class="style_td" style="text-align:center;">スピード +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">32</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">12</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_7" onclick="getSong()"></td>
+</tr>
+
+<tr><td class="style_td" style="text-align:center;">青春が待ってる</td><td class="style_td" style="text-align:center;">パワー +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">32</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">12</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_8" onclick="getSong()"></td>
+</tr>
+
+
+
+
+<tr><td class="style_td0" rowspan="3" style="text-align:center;">クラシック級 1月前半～</td><td class="style_td" style="text-align:center;">ユメヲカケル！</td><td class="style_td" style="text-align:center;">トレーニングのスキルPt上昇量 +2<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_9" onclick="getSong()"></td>
+</tr>
+<tr><td class="style_td" style="text-align:center;">ぼくらのブルーバードデイズ</td><td class="style_td" style="text-align:center;">トレーニングのスピード上昇量 +2<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_10" onclick="getSong()"></td>
+</tr>
+<tr><td class="style_td" style="text-align:center;">A・NO・NE</td><td class="style_td" style="text-align:center;">トレーニングの根性上昇量 +2<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_11" onclick="getSong()"></td>
+</tr>
+
+
+
+
+
+<tr><td class="style_td0" rowspan="4" style="text-align:center;">クラシック級 7月前半～</td>
+<td class="style_td" style="text-align:center;">グロウアップ・シャイン！</td><td class="style_td" style="text-align:center;">トレーニングのスキルPt上昇量 +3<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_12" onclick="getSong()"></td></tr>
+<tr><td class="style_td" style="text-align:center;">木漏れ日のエール</td><td class="style_td" style="text-align:center;">トレーニングの賢さ上昇量 +2<br class="spacer" />サポート連続イベント率アップ Lv +1</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_13" onclick="getSong()"></td></tr>
+<tr><td class="style_td" style="text-align:center;">ぴょいっと♪はれるや！</td><td class="style_td" style="text-align:center;">トレーニングのスタミナ上昇量 +2<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_14" onclick="getSong()"></td></tr>
+<tr><td class="style_td" style="text-align:center;">七色の景色</td><td class="style_td" style="text-align:center;">トレーニングのパワー上昇量 +2<br class="spacer" />得意率アップ +5</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">21</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">42</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_15" onclick="getSong()"></td></tr>
+
+
+
+
+
+<tr><td class="style_td0" rowspan="6" style="text-align:center;">シニア級 1月前半～</td>
+<td class="style_td" style="text-align:center;">世界は僕らの言いなりさ</td><td class="style_td" style="text-align:center;">スタミナ +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">32</td><td class="style_td" style="text-align:center;">12</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_16" onclick="getSong()"></td></tr>
+
+<tr><td class="style_td" style="text-align:center;">PRESENT MARCH♪</td><td class="style_td" style="text-align:center;">パワー +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">22</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">22</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_17" onclick="getSong()"></td></tr>
+
+<tr><td class="style_td" style="text-align:center;">春空BLUE</td><td class="style_td" style="text-align:center;">根性 +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">12</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">32</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_18" onclick="getSong()"></td></tr>
+
+<tr><td class="style_td" style="text-align:center;">ユメゾラ</td><td class="style_td" style="text-align:center;">賢さ +22<br class="spacer" />友情トレーニング獲得量アップ +5%</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">22</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">22</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_19" onclick="getSong()"></td></tr>
+
+<tr><td class="style_td" style="text-align:center;">大好きのタカラバコ</td><td class="style_td" style="text-align:center;">スピード +26<br class="spacer" />友情トレーニング獲得量アップ +10%</td>
+<td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">26</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_20" onclick="getSong()"></td></tr>
+
+<tr><td class="style_td" style="text-align:center;">Fanfare for Future!</td><td class="style_td" style="text-align:center;">根性 +26<br class="spacer" />友情トレーニング獲得量アップ +10%</td>
+<td class="style_td" style="text-align:center;">26</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">42</td><td class="style_td" style="text-align:center;">0</td>
+<td class='pointer'><input type="checkbox" class="check_sng" id="song_21" onclick="getSong()"></td></tr>
+
+
+<tr><td class="style_td0" style="text-align:center;">シニア級 12月前半<br class="spacer" />(自動習得)</td>
+<td class="style_td" style="text-align:center;">GIRLS' LEGEND U</td><td class="style_td" style="text-align:center;">すべての基礎能力 +10<br class="spacer" />友情トレーニング獲得量アップ +10</td>
+<td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td class="style_td" style="text-align:center;">0</td><td></td></tr>
+
+
+</tbody></table></div>
+</div>
+
+
+
+
+<a href="http://javascript123.seesaa.net/article/151153874.html">アンカーテキスト</a>
+
+<script language="JavaScript">
+<!--　//javascript123
+
+
+　window.onload = putId;
+    function putId(){
+      // テーブルの行にID名を付ける
+     var Tbe = document.getElementById("table_1");
+      Tr = Tbe.getElementsByTagName("tr");
+       for(i=0; i<Tr.length; i++){
+        Tr[i].id='trID'+i;
+            }
+         }
+
+document.getElementById("checkCmt1").onclick = function(){
+if (this.checked) {
+hideRow()
+}else{
+hideRow()
+}
+}
+
+
+
+function getSong() {
+
+ var checks = document.getElementsByClassName('check_sng');
+ var CELL_COLOR = 'gray';
+
+
+var rowss = document.getElementsByClassName('style_td');
+
+            for ( i = 0; i < checks.length; i++) {
+
+                    for ( j = i*7; j < (i+1)*7; j++) {
+                        rowss[j].style.backgroundColor = ( checks[i].checked === true )? CELL_COLOR : '';
+                    }
+            }
+
+            for ( i = 0; i < checks.length; i++) {
+                if ( checks[i].checked === true ) {
+                }
+            }
+
+CalcPf();
+
+
+}
+function CalcPf() {
+
+ var tablen = document.getElementById("table_need");
+ var checks = document.getElementsByClassName('check_sng');
+ var Da = 0;
+ var Pa = 0;
+ var Vo = 0;
+ var Vi = 0;
+ var Me = 0;
+
+
+var rowss = document.getElementsByClassName('style_td');
+
+            for ( i = 0; i < checks.length; i++) {
+Da+=parseInt(( checks[i].checked === true )? '0' : rowss[(i*7)+2].innerHTML);
+Pa+=parseInt(( checks[i].checked === true )? '0' : rowss[(i*7)+3].innerHTML);
+Vo+=parseInt(( checks[i].checked === true )? '0' : rowss[(i*7)+4].innerHTML);
+Vi+=parseInt(( checks[i].checked === true )? '0' : rowss[(i*7)+5].innerHTML);
+Me+=parseInt(( checks[i].checked === true )? '0' : rowss[(i*7)+6].innerHTML);
+
+            }
+
+tablen.rows[1].cells[0].innerHTML=Da;
+tablen.rows[1].cells[1].innerHTML=Pa;
+tablen.rows[1].cells[2].innerHTML=Vo;
+tablen.rows[1].cells[3].innerHTML=Vi;
+tablen.rows[1].cells[4].innerHTML=Me;
+
+
+
+}
+
+
+function hideRow(){
+  //セレクトメニューの　option value値(ID名)の取得
+ var List = document.getElementById("list");
+  index_nub = List.selectedIndex;
+
+ var rows = 0
+ var songs = 0
+
+
+
+if(index_nub==1){
+rows=0
+songs=8
+
+}else if(index_nub==2){
+rows=7
+songs=3
+
+}else if(index_nub==3){
+rows=9
+songs=4
+
+}else if(index_nub==4){
+rows=12
+songs=6
+
+}else{
+rows=0
+songs=1
+
+}
+
+for(i=0; i<songs; i++){
+   optVal=List.options[index_nub+rows+i].value;
+    var Row = document.getElementById(optVal);
+     //行の表示、非表示
+     Row.style.display=(Row.style.display == 'none')?"":"none";
+}
+
+
+
+   }
+
+function hideRow2(){
+  //セレクトメニューの　option value値(ID名)の取得
+
+ checks = document.getElementsByClassName('check_sng');
+ var List = document.getElementById("list");
+ index_nub = List.selectedIndex;
+
+ var rows = 0
+ var songs = 0
+
+if(index_nub==4){
+}else{
+if(index_nub==0){
+rows=8
+
+}else if(index_nub==1){
+rows=11
+
+}else if(index_nub==2){
+rows=15
+
+}else if(index_nub==3){
+rows=22
+
+}else{
+rows=0
+}
+
+for(i=0; i<23; i++){
+   optVal=List.options[i].value;
+    var Row = document.getElementById(optVal);
+
+if(0<i & i<22){
+checks[i-1].checked = (Row.style.display=="none")? false:checks[i-1].checked;
+if(i>rows){checks[i-1].checked = true;}
+
+}
+     //行の表示、非表示
+     Row.style.display=(i>rows)? "none":"";
+}
+CalcPf();
+
+}
+
+}//func
+
+
+
+function ResetCk(){
+  //セレクトメニューの　option value値(ID名)の取得
+
+ checks = document.getElementsByClassName('check_sng');
+ var List = document.getElementById("list");
+ index_nub = List.selectedIndex;
+
+for(i=0; i<23; i++){
+   optVal=List.options[i].value;
+    var Row = document.getElementById(optVal);
+
+checks[i].checked = false;
+}
+}
+
+
+// -->
+</script>
+
+<br />
+<br />
+
+<a href="https://qiita.com/syukan3/items/7ccc9b18495695db119b">チェックボックス1</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+        // チェックボックスを含む td 要素をクリックしたときに、チェックボックスをクリック
+        $('td:has(input[type=checkbox])').on('click', function(e){
+            $(this).find('input[type=checkbox]').click();
+        });
+        // バブリングを防止
+        $('td input[type=checkbox]').on('click', function(e){
+            e.stopPropagation();
+        });
+
+      </script>
+<br />
+
+<a href="https://www.qam-web.com/?p=16547">チェックボックス2</a>
+
+<a href="https://so-zou.jp/web-app/tech/programming/javascript/dom/node/element/html/table/">テーブル制御</a>
+
+<script>
+document.currentScript.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+</script>
+
+
+<script>
+document.currentScript.insertAdjacentHTML('beforebegin', '<p>window.onload = function(){
+var array = ["address","age"];
+    for(var j=0;j<array.length;j++){
+        var id = array[j] + "_display";
+        var obj = array[j] + "_check";
+        var CELL = document.getElementById(id);
+        var TABLE = CELL.parentNode.parentNode.parentNode;
+        for(var i=0;TABLE.rows[i];i++) {
+            TABLE.rows[i].cells[CELL.cellIndex].style.display = (document.getElementById(obj).checked) ? '' : 'none';
+        }
+    }
+}
+function checkbox_cell( obj,id ){
+    var CELL = document.getElementById(id);
+    var TABLE = CELL.parentNode.parentNode.parentNode;
+    for(var i=0;TABLE.rows[i];i++) {
+        TABLE.rows[i].cells[CELL.cellIndex].style.display = (obj.checked) ? '' : 'none';
+    }
+}</p>');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
