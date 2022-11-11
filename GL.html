@@ -395,10 +395,11 @@ function ResetCk(){
 
 for(i=0; i<23; i++){
    optVal=List.options[i].value;
-    var Row = document.getElementById(optVal);
-
-checks[i].checked = false;
+   var Row = document.getElementById(optVal);
+   checks[i].checked = false;
 }
+document.getElementById("list").selectedIndex = 0;
+hideRow2();
 }
 
 
