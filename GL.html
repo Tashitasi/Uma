@@ -9,7 +9,7 @@
 
 
 
-
+<input onclick="ReturnSeason(),hideRow2(),getSong()" type="button" value="＜＜＜">
 <select id="list">
   <option value="trID1">ジュニア期</option>
   <option value="trID2">クラシック前</option>
@@ -35,11 +35,11 @@
   <option value="trID22" hidden>22行目</option>
   <option value="trID23" hidden>23行目</option>
 </select>
-<input onclick="hideRow2(),getSong()" type="button" value="～まで表示">
-<br>
-<input onclick="hideRow()" type="button" value="表示 / 非表示">
+<input onclick="NextSeason(),hideRow2(),getSong()" type="button" value="＞＞＞">
+<input onclick="hideRow2(),getSong()" type="button" value="～まで表示"><br>
+<input onclick="hideRow()" type="button" value="表示 / 非表示"><br>
 <input onclick="ResetCk()" type="button" value="リセット">
-　<br />
+<br />
 <br />
   
 <div id="body">
@@ -427,11 +427,28 @@ for(i=0; i<21; i++){
    var Row = document.getElementById(optVal);
    checks[i].checked = false;
 }
-List.selectedIndex = 0;
+ResetSeason();
 hideRow2();
 getSong();
 
 }
+
+function ResetSeason(){
+ var List = document.getElementById("list");
+ List.selectedIndex = 0;
+}
+function ReturnSeason(){
+ var List = document.getElementById("list");
+ if(List.selectedIndex>0){
+  List.selectedIndex -= 1;
+ }
+}
+function NextSeason(){
+ var List = document.getElementById("list");
+ if(List.selectedIndex<3){
+  List.selectedIndex += 1;
+ }
+ }
 
 
 // -->
